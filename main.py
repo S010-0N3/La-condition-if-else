@@ -13,3 +13,18 @@ for u in planete_names:
 
 print(long_names)
 print(short_names)
+
+
+### Compter les éléments d'une liste et présenter les résultats dans un dictionnaire.
+
+fruits = ["Citron","Banane","Pomme","Pomme","Pomme","Banane","Banane","Pomme"]
+
+fruits_count = {}
+
+for item in fruits:
+  if item in fruits_count:
+    fruits_count[item] = fruits_count[item] + 1
+  else:
+    fruits_count[item] = 1
+
+print(fruits_count)
